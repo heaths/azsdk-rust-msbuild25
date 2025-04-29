@@ -1,0 +1,14 @@
+[package]
+name = "rustify"
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/heaths/azsdk-rust-msbuild25"
+license = "MIT"
+publish = false
+
+[dependencies]
+azure_data_cosmos = "0.22.1"
+azure_identity = "0.23.0"
+azure_messaging_eventhubs = "0.2.0"
+rocket = { version = "0.5.1", features = ["json"] }
+yew = { version = "0.21.0", features = ["csr"] }
