@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Azure SDK for Rust Demo</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="upload-container">
+      <h1>File Upload</h1>
+      <div id="uploadArea" class="upload-area">
+        <p>Drag and drop a file here</p>
+        <p>or</p>
+        <button id="fileSelectBtn" class="upload-btn">Choose File</button>
+        <input
+          type="file"
+          id="fileInput"
+          class="file-input"
+          accept="image/jpeg,image/png"
+        />
+      </div>
+      <div id="uploadStatus" class="upload-status"></div>
+      <div id="progressBar" class="progress-bar">
+        <div id="progress" class="progress"></div>
+      </div>
+    </div>
+    <script src="/js/upload.js"></script>
+  </body>
+</html>

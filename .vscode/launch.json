@@ -4,33 +4,26 @@
     {
       "type": "lldb",
       "request": "launch",
-      "name": "tests",
-      "cargo": {
-        "args": [
-          "test",
-          "--no-run",
-          "--lib"
-        ]
-      },
-      "args": [],
-      "cwd": "${workspaceFolder}"
-    },
-    {
-      "type": "lldb",
-      "request": "launch",
-      "name": "executable",
+      "name": "Serve",
       "cargo": {
         "args": [
           "build",
-          "--bin=main"
+          "--bin=rustify",
+          "--package=rustify"
         ],
         "filter": {
-          "name": "main",
+          "name": "rustify",
           "kind": "bin"
         }
       },
       "args": [],
-      "cwd": "${workspaceFolder}"
+      "cwd": "${workspaceFolder}",
+      "serverReadyAction": {
+        "action": "openExternally",
+        "killOnServerStop": false,
+        "pattern": "Rocket has launched from (https?://[^\\s]+)",
+        "uriFormat": "%s"
+      }
     }
   ]
 }
