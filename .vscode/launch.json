@@ -18,12 +18,23 @@
       },
       "args": [],
       "cwd": "${workspaceFolder}",
+      "env": {
+        "RUST_LOG": "warn,rocket=info,rustify=info,azure_core=info,azure_core_amqp=info"
+      },
+      "envFile": "${input:azdDotenv}",
       "serverReadyAction": {
         "action": "openExternally",
         "killOnServerStop": false,
         "pattern": "Rocket has launched from (https?://[^\\s]+)",
         "uriFormat": "%s"
       }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "azdDotenv",
+      "type": "command",
+      "command": "azure-dev.commands.getDotEnvFilePath"
     }
   ]
 }
