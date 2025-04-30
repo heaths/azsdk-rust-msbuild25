@@ -10,14 +10,17 @@
     "rust-toolchain.toml"
   ],
   "words": [
+    "azsdk",
     "clippy",
     "dragover",
     "eventhubs",
-    "unhighlight",
+    "msbuild",
     "repr",
     "rustify",
     "rustlang",
-    "rustup"
+    "rustup",
+    "unhighlight",
+    "westus"
   ],
   "dictionaryDefinitions": [
     {
